@@ -50,18 +50,7 @@ body {
     margin-top: 20px;
 }
 
-.temp {
-    color: #fff;
-    margin-top: 5px;
-    margin-left: 10px;
-}
-
-.text-weather-mood {
-    color: #fff;
-    margin-left: 10px;
-}
-
-.text-humidity {
+.small-div > p {
     color: #fff;
     margin-left: 10px;
 }
