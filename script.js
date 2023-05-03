@@ -1,12 +1,16 @@
 const key = "e1d762e0204cd549df4686cfdfd4cf6d"
 
 function getDataOnScreen(data) {
-    console.log(data)
-    document.querySelector(".city").innerHTML = "Weather in " + data.name
-    document.querySelector(".temp").innerHTML = Math.floor(data.main.temp) + " Cº."
-    document.querySelector(".text-weather-mood").innerHTML = data.weather[0].description + "."
-    document.querySelector(".text-humidity").innerHTML = data.main.humidity + " %."
-    document.querySelector(".bx-cloud").src = `https://openweathermap.org/img/wn/${data.weather[0].icon}.png`
+    try {
+        document.querySelector(".city").innerHTML = "Weather in " + data.name
+        document.querySelector(".temp").innerHTML = Math.floor(data.main.temp) + " Cº."
+        document.querySelector(".text-weather-mood").innerHTML = data.weather[0].description + "."
+        document.querySelector(".text-humidity").innerHTML = data.main.humidity + " %."
+        document.querySelector(".bx-cloud").src = `https://openweathermap.org/img/wn/${data.weather[0].icon}.png`
+    }catch {
+        document.querySelector(".city").innerHTML = "Invalid venue!"
+    }
+    
 }
 
 async function searchCity(city) {
