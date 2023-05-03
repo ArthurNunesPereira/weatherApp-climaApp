@@ -24,3 +24,12 @@ function searchClick() {
 
     searchCity(city)
 }
+
+const cityInput= document.querySelector(".input-city")
+cityInput.addEventListener("keyup", (e) => {
+    if (e.code === "Enter") {
+      const city = e.target.value;
+  
+      searchClick()
+    }
+  });
