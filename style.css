@@ -16,11 +16,38 @@ body {
     background-position: center;
 }
 
+.header-app {
+    color: #fff;
+    font-size: 28px;
+    font-weight: 300;
+    text-align: center;
+    padding: 5px;
+}
+
+.city {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+    padding: 5px;
+}
+
 .big-div {
     background: #000000;
-    opacity: 0.8;
     border-radius: 25px;
     padding: 20px;
+    width: 95%;
+    max-width: 500px;
+}
+
+.medium-div {
+    margin-top: 5px;
+}
+
+.temp {
+    color: #fff;
+    font-size: 20px;
+    margin-top: 5px;
 }
 
 .input-city {
@@ -44,16 +71,22 @@ body {
     float: right;
 }
 
+.search-button:hover {
+    background: #ffff;
+    opacity: 1;
+    border-radius: 25px;
+}
+
 .bx-search-alt {
+    z-index: 99;
     color: #fff;
     font-size: 30px;
     transition: all 0.5 ease;
 }
 
-.bx-search-alt:hover {
+.bx-search-alt:hover{
     background: #fff;
     color: #1d1b31;
-    border-radius: 25px;
 }
 
 .bxs-thermometer {
@@ -76,10 +109,9 @@ body {
 
 footer {
     background: #000000;
-    opacity: 0.8;
     border-radius: 25px;
     padding: 10px;
-    color: white;
+    color: #fff;
     text-align: center;
     font-style: italic;
     position: absolute;
