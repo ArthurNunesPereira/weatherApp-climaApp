@@ -44,10 +44,26 @@ body {
     margin-top: 5px;
 }
 
+.small-div {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
 .temp {
     color: #fff;
-    font-size: 20px;
     margin-top: 5px;
+    margin-left: 10px;
+}
+
+.text-weather-mood {
+    color: #fff;
+    margin-left: 10px;
+}
+
+.text-humidity {
+    color: #fff;
+    margin-left: 10px;
 }
 
 .input-city {
