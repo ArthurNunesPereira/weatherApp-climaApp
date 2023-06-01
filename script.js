@@ -1,7 +1,8 @@
+
 const key = "e1d762e0204cd549df4686cfdfd4cf6d"
 const countryElement = document.querySelector("#country");
 
-async function getDataOnScreen (data) { // Esse teria q ser async tbm...
+async function getDataOnScreen (data) { 
     try {
         const apiCountryURL = `https://www.countryflagicons.com/FLAT/64/${data.sys.country}.png`;
         document.querySelector(".city").innerHTML = "Weather in " + data.name
