@@ -91,9 +91,3 @@ async function showWeather(name, lat, lon) {
         document.querySelector(".city").innerHTML = "Invalid venue!"
     }
 }
-
-  /* 
-  FAZER: Ñ TA MAIS FUNCIONANDO A PESQUISA COM ENTER E CLICANDO NO BOTÃO, VER ISSO!
-  SERÁ Q É QUESTÃO DE O ENTER E O CLICK ESTAR ANTES DO SCRIPT DA LISTA...? TENATR COLOCAR O ENTER E O CLICK DEPOIS DO COD DA LISTA PRA VER SE FUNCIONA!!!!
-  
-  */
